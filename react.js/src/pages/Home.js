@@ -1,3 +1,4 @@
+import Calculate from "../Components/Buttons/Calculate_Button"
 import Calculate_Button from "../Components/Buttons/Calculate_Button"
 
 // Pictures
@@ -15,7 +16,7 @@ export default function Home_Page() {
             <img src = {NP2} width = "80px" className="sign"/>
             <img src = {NP3} width = "80px" className="sign"/>
         </div>
-        <Calculate_Button/>
+        <Calculate/>
         </>
     )
 }

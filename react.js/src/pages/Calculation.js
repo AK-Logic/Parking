@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-// function Time (
-//     T = {
-//         currentDateTime: Date().toLocaleString()
-//     }
-// )
+// const DateTime = () => {
+//     var [date,setDate] = useState(new Date());
+// }
 
-export default function Calc() {
+export default function Calculation() {
     return (
         <div>
             <h1>
