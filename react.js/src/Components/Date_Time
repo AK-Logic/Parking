@@ -1,0 +1,8 @@
+import  React, { useState , useEffect } from 'react'
+
+export default function DateTime () {
+this.state = {currentDateTime: Date().ToLocaleString()}
+return (
+    { this.state.currentDateTime }
+)
+}
