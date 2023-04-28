@@ -16,3 +16,26 @@
 
 .button:hover {
     background-color: rgb(172, 118, 159);}
+
+.navbar {
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar > li {
+    padding: 10px;
+    text-align: right;
+}
+
+.nav{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* background-color: grey; */
+    padding: 10px 10px;
+    box-shadow: 1px 2.5px 7.5px rgba(0,0,0,0.1);; 
+}
+
+.title {
+    text-align: left;
+}

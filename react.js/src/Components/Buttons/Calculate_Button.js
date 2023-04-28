@@ -2,25 +2,16 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import Calculation from '../../pages/Calculation';
 
+import moment from "moment";
 
 export default function Calculate() {
   let history = useHistory();
 
   return (
-        <button className = "button" onClick={() => {history.push("/calculate")}}>
+        <button className = "button" onPress={() => moment.setCurrentDate(new Date())}>
             Calculate
         </button>
   );
 }
 
 
-// const Calculate_Button = () => {
-//   return (
-//     <button className = "button" onClick={calculate_page}>
-//         Calculate
-//     </button>
-
-//   )
-// }
-
-// export default Calculate_Button
