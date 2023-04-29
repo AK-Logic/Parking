@@ -7,7 +7,6 @@ export default function Header () {
                 <img src={logo} width="80px" />
                 <h1 className='title'>Can I park here?</h1>
                 <ul className="navbar">
-                    <li>Home</li>
                 </ul>
             </nav>
             

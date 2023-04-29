@@ -1,17 +1,24 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
-import Calculation from '../../pages/Calculation';
+import React, { useState } from 'react'
 
-import moment from "moment";
 
-export default function Calculate() {
-  let history = useHistory();
+new Date();
+
+const MyButton = () => {
+  const [text, setText] = useState('');
+  const currentDate = new Date();
+
+  const handleClick = () => {
+    const currentDateString = currentDate.toLocaleString();
+    setText(currentDateString);
+    console.log(currentDateString);
+  };
 
   return (
-        <button className = "button" onPress={() => moment.setCurrentDate(new Date())}>
-            Calculate
-        </button>
+    <div>
+      <button onClick={handleClick}>Click Me</button>
+      {text && <span>{text}</span>}
+    </div>
   );
-}
+};
 
-
+export default MyButton;
