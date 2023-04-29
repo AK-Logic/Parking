@@ -2,6 +2,7 @@ import Calculate from "../Components/Buttons/Calculate_Button"
 import Calculate_Button from "../Components/Buttons/Calculate_Button"
 import Signs from "../Components/Sign_component"
 
+
 // No Parking Signs
 import NP1 from "../pictures/base_signs/NP.jpg"
 import NP2 from "../pictures/base_signs/NP_right.jpg"
@@ -36,7 +37,11 @@ export default function Home_Page() {
                 <Signs src = {NS_right}/>    
                 <Signs src = {NS_left}/>                
         </div>
+<<<<<<< HEAD
             <Calculate/>
+=======
+        <MyButton/>
+>>>>>>> c129f2c (change the import from calculate to mybutton;)
         </>
     )
 }

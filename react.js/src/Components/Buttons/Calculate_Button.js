@@ -5,9 +5,9 @@ new Date();
 
 const MyButton = () => {
   const [text, setText] = useState('');
-  const currentDate = new Date();
-
+  
   const handleClick = () => {
+    const currentDate = new Date();
     const currentDateString = currentDate.toLocaleString();
     setText(currentDateString);
     console.log(currentDateString);
@@ -15,7 +15,7 @@ const MyButton = () => {
 
   return (
     <div>
-      <button onClick={handleClick}>Click Me</button>
+      <button onClick={handleClick}>Calculate</button>
       {text && <span>{text}</span>}
     </div>
   );
