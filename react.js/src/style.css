@@ -1,5 +1,12 @@
 .sign {
     margin: 10px;
+    width: 80px;
+}
+
+.sign_selected {
+    margin: 10px;
+    width: 80px;
+    border: 7px solid rgb(204, 51, 13)
 }
 
 .button {
