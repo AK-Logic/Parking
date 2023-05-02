@@ -9,6 +9,10 @@
     border: 7px solid rgb(204, 51, 13)
 }
 
+.Verify {
+    vertical-align: left;
+}
+
 .button {
     color: Black;
     padding: 5px 15px;
