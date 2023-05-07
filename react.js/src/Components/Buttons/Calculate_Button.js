@@ -15,8 +15,10 @@ const MyButton = () => {
 
   return (
     <div>
-      <button onClick={handleClick}>Calculate</button>
+      <button onClick={handleClick} className='button'>Calculate</button>
+      <div>
       {text && <span>{text}</span>}
+      </div>
     </div>
   );
 };
