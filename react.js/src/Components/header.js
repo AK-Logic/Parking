@@ -5,9 +5,10 @@ export default function Header () {
         <header>
             <nav className='nav'>
                 <img src={logo} width="80px" />
-                <h1 className='title'>Can I park here?</h1>
-                <ul className="navbar">
+                <h1 className='title'>Can I Park Here?</h1>
+                <ul className="navbar" style={{ marginLeft: 'auto' }}>
                     <li>Home</li>
+                    <li>V2.0 (In Beta)</li>
                 </ul>
             </nav>
             
