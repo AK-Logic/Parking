@@ -1,9 +1,11 @@
 import React from "react";
-import InputTime from '../Components/Input_timerange'
+import InputTime from './InputTime'
 
 
 
-export default function VerifySign({ SelectedSigns }) {
+export default function VerifySign({ SelectedSigns}) {
+
+
   return (
     <div>
         <h1 style={{ textDecoration: 'underline' }}>Verify:</h1>

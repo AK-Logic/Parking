@@ -22,18 +22,25 @@ import NS_right from '../pictures/base_signs/NS_right.jpg'
 
 export default function Home_Page() {
     const [SelectedSigns, setSelectedSigns] = useState([]);
+    const [SelectedSignTypes, setSelectedSignTypes] = useState([]);
 
-    function handleSignClick(src) {
+    function handleSignClick(src, stype) {
         // Check if the sign is already in the array
         const index = SelectedSigns.findIndex(sign => sign.src === src);
         if (index === -1) {
           // If it's not in the array, add it
           setSelectedSigns(SelectedSigns => [ ...SelectedSigns, { src }])
+          setSelectedSignTypes(SelectedSignTypes => [ ...SelectedSignTypes, { stype }]);
         } else {
           // If it's already in the array, remove it
           const updatedSigns = [...SelectedSigns];
           updatedSigns.splice(index, 1);
           setSelectedSigns(updatedSigns);
+
+          
+          const updatedTypes = [...SelectedSignTypes];
+          updatedTypes.splice(index, 1);
+          setSelectedSignTypes(updatedTypes);
         }
       }
 
@@ -57,7 +64,7 @@ export default function Home_Page() {
             <Signs src = {NS_right} stype = "NoStanding" AddtoArray = {handleSignClick} />    
             <Signs src = {NS_left} stype = "NoStanding" AddtoArray = {handleSignClick} />
         </div>
-            <VerifySign SelectedSigns = {SelectedSigns} />
+            <VerifySign SelectedSigns = {SelectedSigns} SelectedSignTypes = {SelectedSignTypes}/>
             <Calculate/>
         </>
     )
